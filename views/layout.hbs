@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Je! diseño</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/stylesheets/jimena.css">
+</head>
+
+<body>
+    <header>
+        <div class="holder">
+
+            <img src="images/Logo Je!.png" width="100" alt="jedisenio">
+            <h1>diseño gráfico - objetos - ilustraciones</h1>
+        </div>
+
+    </header>
+
+    <nav>
+        <ul>
+            <div class="holder">
+                <li><a class="{{#if isHome}}activo{{/if}}" href="/">Home</a></li>
+                <li><a class="{{#if isNosotros}}activo{{/if}}"href="/nosotros">Nosotros</a></li>
+                <li><a class="{{#if isGaleria}}activo{{/if}}"href="/galeria">Galería</a></li>
+                <li><a class="{{#if isNovedades}}activo{{/if}}"href="/novedades">Novedades</a></li>
+                <li><a class="{{#if isContacto}}activo{{/if}}"href="/contacto">Contacto</a></li>
+            </div>
+        </ul>
+
+    </nav>
+    <main class="holder">
+    {{{body}}}
+   </main>
+    <footer>
+        <p>Diseñado por Jimena Esteves</p>
+    </footer>
+
+
+</body>
+
+</html>
