@@ -1,0 +1,41 @@
+    <h2>Contacto</h2>
+ <div class="columna left">
+            <h2>Comunicate con nosotros</h2>
+            <form action="/contacto" method="post" class="formulario">
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre">
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="text" name="email">
+                </p>
+                <p>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" name="tel">
+                </p>
+                <p>
+                    <label for="comentario">Comentario:</label>
+                    <textarea name="comentario"></textarea>
+                </p>
+                <p class="acciones"><input type="submit" value="Enviar"></p>
+
+            </form>
+            {{#if message}}
+                <p>{{message}}</p>
+            {{/if}}
+
+        </div>
+
+
+        <div class="columna right">
+            <h2>Otras vías de comunicación</h2>
+            <p>Podés comunicarte con nosotros por otros medios</p>
+            <ul>
+                <li>Teléfono: 280 4696773</li>
+                <li>E-mail: jedisenio@gmail.com</li>
+                <li>facebook e Instagram: @estudio.je</li>
+            </ul>
+
+        </div>
+
